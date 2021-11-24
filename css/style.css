@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul, nav{
+    list-style: none;
+}
+a{
+    text-decoration: none; cursor: pointer;opacity: 0.9;
+}
+a:hover{
+    opacity: 1;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    width: 100%;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    margin: 0 15px;
+}
+
+.banner{
+    background-image: url(../img/4.jpg);/* adicionando imagem no fundo da tag section */
+    background-size: cover;
+    min-height: 100vh;/* definindo altura de acordo com a visualização */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner h1{
+    font-size: 80px;/* tamanho da fonte */
+    color: #fff;/* cor da fonte do segundo texto do banner */
+}
+.banner h3{
+    font-size: 40px;
+    color: #fff;
+}
+.banner button{
+    padding: 10px;
+    font-size: 20px;
+}
