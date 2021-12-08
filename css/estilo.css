@@ -27,7 +27,11 @@ img{max-width: 100%;}
 .menu li{
     margin: 0 15px;
 }
-
+.menu-responsivo{
+    display: none;
+    width: 100%;
+    padding: 20px 15px;
+}
 /* Editando banner principal */
 .banner{
     background-image: url(../img/christopher-gower-vjMgqUkS8q8-unsplash.jpg); 
@@ -102,3 +106,27 @@ img{max-width: 100%;}
     background-color: #fff;
 }
 
+@media (max-width:760px) {
+    .menu-responsivo{
+        display:block;        
+    }
+    .menu{
+        display: none;
+    }
+    .menu li{
+        display: block;
+        margin: 0;
+        background-color: blueviolet;
+        padding: 20px;
+        border-bottom: cornsilk 1px solid;
+    }
+    .menu li a{
+        color: cornsilk;
+    }
+    .cabecalho{
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        
+    }
+}
